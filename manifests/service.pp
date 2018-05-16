@@ -13,7 +13,7 @@ class acct::service {
 
   file { '/var/log/pacct':
     ensure => present,
-    mode   => 0600,
+    mode   => '0600',
   } ->
   service { 'acct':
     ensure => $ensure,
