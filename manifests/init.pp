@@ -5,7 +5,7 @@ class acct(
 ) {
 
    case $::kernel {
-    Linux: {
+    'Linux': {
     }
     default: {
       fail("The ${module_name} module is not yet supported on ${::osfamily}")
